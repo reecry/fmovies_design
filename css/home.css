@@ -1,0 +1,71 @@
+/* Giving Margin and Padding 0px to All the Elements and Giving Box Sizing: Border Box */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #080243;
+}
+
+/* Starting Navbar CSS Code */
+
+/* It uses Flex Box and .navbar-links is used to provide css to all the links */
+
+.navbar-container{
+    background-color: #080243;
+    box-shadow: #04002285 0px 3px 6px;
+}
+
+.navbar-data-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 4em;
+}
+
+.navbar-logo{
+    width: 7em;
+    height: auto;
+}
+
+.navbar-logo-container{
+    flex-grow: 2;
+    text-align: center;
+}
+
+.navbar-center-links{
+    flex-grow: 4;
+    text-align: left;
+}
+
+.navbar-right-links{
+    flex-grow: 4;
+    text-align: right;
+}
+
+.navbar-links{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1.2em;
+    text-decoration: none;
+}
+
+.navbar-links:hover{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition-timing-function: ease-in-out;
+    color: #979797;
+}
+
+/* Ending Navbar CSS Code Here */
