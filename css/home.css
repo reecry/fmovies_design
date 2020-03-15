@@ -69,3 +69,136 @@ body{
 }
 
 /* Ending Navbar CSS Code Here */
+
+.home-page-main-container{
+    margin-top: 6em;
+}
+
+.space-block{
+    height: 1.5em;
+}
+
+.home-page-data-container{
+    text-align: center;
+    margin: .5em;
+}
+
+.main-logo{
+    width: 10em;
+}
+
+.heading-text{
+    font-size: 2em;
+    color: white;
+}
+
+.serachbar-container{
+    display: flex;
+    justify-content: center;
+    margin: .5em;
+}
+
+.seacrhbar-input{
+    outline: none;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    -webkit-border-radius: 8px 0px 0px 8px;
+    -moz-border-radius: 8px 0px 0px 8px;
+    -ms-border-radius: 8px 0px 0px 8px;
+    -o-border-radius: 8px 0px 0px 8px;
+    width: 40em;
+    font-size: 1em;
+    padding: 1.2em;
+    color: #555555;
+}
+
+.search-button{
+    position: relative;
+    border: none;
+    outline: none;
+    padding-right: 10px;
+    background-color: white;
+    border-radius:0px 8px 8px 0px;
+    -webkit-border-radius:0px 8px 8px 0px;
+    -moz-border-radius:0px 8px 8px 0px;
+    -ms-border-radius:0px 8px 8px 0px;
+    -o-border-radius:0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+.seacrhbar-icon{
+    color: #4d4d4d;
+    font-size: 2em;
+}
+
+.dynamic-menu-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.dynamic-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dynamic-menu > div{
+    margin: 10px;
+}
+
+.dynamic-menu-link{
+    background-color: #E2FBFF;
+    color: #525252;
+    padding: .4em 1.5em;
+    text-decoration: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 1em;
+    margin: 0em 1em;
+}
+
+.dynamic-menu-link:hover{
+    background-color: #c3eff6;
+    color: black;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* Starting Footer CSS */
+
+.footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.footer-links{
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: .5em 2em;
+}
+
+.left-footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-grow: 5;
+}
+
+.right-footer{
+    text-align: center;
+    flex-grow: 5;
+}
+
+.footer-icon{
+    color: white;
+    font-size: 1.5em;
+    margin: 10px;
+}
