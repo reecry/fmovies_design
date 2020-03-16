@@ -20,11 +20,45 @@ body{
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #080243;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    box-shadow: #030117 0px 1px 9px;
+    display: none;
   }
+
+  .sidenav > ul > .sidenav-links{
+      display: block;
+      width: 100%;
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+      padding: 1em;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+
+  .sidenav-links:hover{
+    background-color: #05003b;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.close-sidenav{
+    text-align: center;
+}
+
+.close-sidenav-icon{
+    font-size: 1.4em;
+    color: white;
+    cursor: pointer;
+}
   
 
 /* Starting Navbar CSS Code */
@@ -318,6 +352,10 @@ body{
 
     .dynamic-menu-empty-space{
         display: none;
+    }
+
+    .sidenav{
+        display: block;
     }
 
   }
