@@ -70,8 +70,10 @@ body{
 
 /* Ending Navbar CSS Code Here */
 
+/* Starting Main Container CSS Code Here */
+
 .home-page-main-container{
-    margin-top: 6em;
+    margin-top: 5em;
 }
 
 .space-block{
@@ -171,11 +173,70 @@ body{
     -o-transition: .5s;
 }
 
+/* Ending Main Container CSS Code Here */
+
+
+/* Starting Trending Section Container CSS */
+
+.trending-section-header-container{
+    display: flex;
+    align-items: center;
+    margin: 1.5em;
+}
+
+.trending-section-text-container{
+    flex-grow: 5;
+}
+
+.trending-section-heading, .share-icon{
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.trending-movie-section-container{
+    display: flex;
+    overflow-x: scroll;
+    cursor: pointer;
+}
+
+.trending-movie-icon{
+    width: 6em;
+    height: auto;
+}
+
+/* srcoll bar */
+.trending-movie-section-container::-webkit-scrollbar {
+    height: .1em;
+}
+
+/* Track */
+.trending-movie-section-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  /* Handle */
+.trending-movie-section-container::-webkit-scrollbar-thumb {
+    background: #e2fbff; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+.trending-movie-section-container::-webkit-scrollbar-thumb:hover {
+    background: #c3eff6; 
+  }
+
+/* Ending Trending Movie Section CSS */
+
+
+
 /* Starting Footer CSS */
 
 .footer-container{
     display: flex;
     align-items: center;
+    padding: 1em;
 }
 
 .footer-links{
@@ -199,9 +260,8 @@ body{
 
 .footer-icon{
     color: white;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 10px;
 }
 
 /* Ending Footer CSS */
-
