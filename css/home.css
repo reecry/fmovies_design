@@ -13,6 +13,20 @@ body{
     background-color: #080243;
 }
 
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+
 /* Starting Navbar CSS Code */
 
 /* It uses Flex Box and .navbar-links is used to provide css to all the links */
@@ -66,6 +80,17 @@ body{
     -o-transition: .5s;
     transition-timing-function: ease-in-out;
     color: #979797;
+}
+
+.hamburger-section{
+    display: none;
+}
+
+.hamburger-icon{
+    font-size: 1.5em;
+    margin-right: 1em;
+    color: white;
+    cursor: pointer;
 }
 
 /* Ending Navbar CSS Code Here */
@@ -265,3 +290,34 @@ body{
 }
 
 /* Ending Footer CSS */
+
+
+
+/* -------------------------------------- */
+/* Applying Media Queries From Here Now */
+/* --------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    .navbar-center-links, .navbar-right-links{
+      display: none;
+    }
+
+    .navbar-logo-container{
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    .hamburger-section{
+        display: block;
+    }
+
+    .dynamic-menu-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .dynamic-menu-empty-space{
+        display: none;
+    }
+
+  }
