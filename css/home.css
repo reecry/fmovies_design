@@ -392,27 +392,14 @@ body{
         display: block;
     }
 
-    .searchbar-input{
-        width: 30em;
-    }
-
   }
 
-  @media only screen and (max-width: 580px){
-    .searchbar-input{
-        width: 25em;
-    }
-  }
 
-  
-  @media only screen and (max-width: 480px){
-    .searchbar-input{
-        width: 20em;
+  @media only screen and (max-width: 710px) {
+   
+    .search-form-container{
+        width: 100%;
+        margin: auto;
     }
-  }
 
-  @media only screen and (max-width: 400px){
-    .searchbar-input{
-        width: 16em;
-    }
   }
