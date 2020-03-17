@@ -137,11 +137,18 @@ body{
 
 /* Starting Search Bar Code */
 
+.search-form-container{
+    width: 700px;
+    margin: auto;
+}
 
-.serachbar-container{
+.searchbar-container{
     display: flex;
-    justify-content: center;
     margin: .5em;
+}
+
+.search-input-box{
+    width: 100%;
 }
 
 .searchbar-input{
@@ -152,14 +159,22 @@ body{
     -moz-border-radius: 8px 0px 0px 8px;
     -ms-border-radius: 8px 0px 0px 8px;
     -o-border-radius: 8px 0px 0px 8px;
-    width: 40em;
+    width: 100%;
     font-size: 1em;
     padding: 1.2em;
     color: #555555;
 }
 
+.search-button-box{
+    background:white;
+    border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+    -moz-border-radius: 0px 8px 8px 0px;
+    -ms-border-radius: 0px 8px 8px 0px;
+    -o-border-radius: 0px 8px 8px 0px;
+}
+
 .search-button{
-    position: relative;
     border: none;
     outline: none;
     padding-right: 10px;
@@ -171,8 +186,6 @@ body{
     -o-border-radius:0px 8px 8px 0px;
     cursor: pointer;
     padding: 1.1em;
-    top: 4px;
-    left: -10px;
 }
 
 .searchbar-icon{
@@ -194,7 +207,7 @@ body{
 
 .results-container-header{
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .results-heading{
@@ -431,27 +444,13 @@ body{
         display: block;
     }
 
-    .searchbar-input{
-        width: 30em;
-    }
-
   }
 
-  @media only screen and (max-width: 580px){
-    .searchbar-input{
-        width: 25em;
+  @media only screen and (max-width: 710px) {
+   
+    .search-form-container{
+        width: 100%;
+        margin: auto;
     }
-  }
 
-  
-  @media only screen and (max-width: 480px){
-    .searchbar-input{
-        width: 20em;
-    }
-  }
-
-  @media only screen and (max-width: 400px){
-    .searchbar-input{
-        width: 16em;
-    }
   }
