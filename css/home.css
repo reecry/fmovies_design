@@ -274,6 +274,7 @@ body{
 .trending-movie-section-container{
     display: flex;
     overflow-x: scroll;
+    overflow-y: hidden;
     cursor: pointer;
 }
 

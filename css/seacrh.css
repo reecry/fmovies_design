@@ -191,6 +191,54 @@ body{
 
 /* Ending Search Bar Code */
 
+
+.results-container-header{
+    display: flex;
+    align-items: center;
+}
+
+.results-heading{
+    color: white;
+    font-size: 1.1em;
+    font-weight: lighter;
+}
+
+.result-heading-container{
+    flex-grow: 5;
+}
+
+.results-pagination-container{
+    background-color: #E2FBFF;
+    padding: .3em 1em;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.results-pagination-links{
+    text-decoration: none;
+    color: #080243;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    text-transform: uppercase;
+    padding: 3px;
+}
+
+.results-pagination-links:hover{
+    background-color: #080243;
+    color:  #E2FBFF;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
 /* Starting Main Container CSS Code Here */
 
     .results-main-container{
@@ -200,12 +248,12 @@ body{
 
     .movies-list-container{
         display: flex;
-        justify-content: left;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
     .movies-list{
-        margin: 1em;
+
         position: relative;
         cursor: pointer;
     }
