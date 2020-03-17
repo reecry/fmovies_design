@@ -158,7 +158,6 @@ body{
     color: white;
 }
 
-
 .search-form-container{
     width: 700px;
     margin: auto;
@@ -194,6 +193,10 @@ body{
     -moz-border-radius: 0px 8px 8px 0px;
     -ms-border-radius: 0px 8px 8px 0px;
     -o-border-radius: 0px 8px 8px 0px;
+    display: flex;
+    align-items: center;
+    width: 3em;
+    justify-content: center;
 }
 
 .search-button{
@@ -207,7 +210,6 @@ body{
     -ms-border-radius:0px 8px 8px 0px;
     -o-border-radius:0px 8px 8px 0px;
     cursor: pointer;
-    padding: 1.1em;
 }
 
 .searchbar-icon{

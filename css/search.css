@@ -134,6 +134,28 @@ body{
 
 /* Ending Navbar CSS Code Here */
 
+/* Advertising CSS Code */
+
+.advertising-box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.header-ad {
+    background-color: #26215A;
+    height: auto;
+    width: 800px;
+}
+
+.side-ad{
+    background-color: #26215A;
+    width: 100%;
+    height: auto;
+}
+
+/* Advertising CSS Code */
+
 
 /* Starting Search Bar Code */
 
@@ -172,6 +194,10 @@ body{
     -moz-border-radius: 0px 8px 8px 0px;
     -ms-border-radius: 0px 8px 8px 0px;
     -o-border-radius: 0px 8px 8px 0px;
+    display: flex;
+    align-items: center;
+    width: 3em;
+    justify-content: center;
 }
 
 .search-button{
@@ -185,7 +211,6 @@ body{
     -ms-border-radius:0px 8px 8px 0px;
     -o-border-radius:0px 8px 8px 0px;
     cursor: pointer;
-    padding: 1.1em;
 }
 
 .searchbar-icon{
@@ -208,6 +233,7 @@ body{
 .results-container-header{
     display: flex;
     align-items: flex-end;
+    margin: 1em
 }
 
 .results-heading{
@@ -270,8 +296,8 @@ body{
 
     .movies-list-container{
         display: flex;
-        margin: 30px;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     .movies-list{
@@ -295,7 +321,7 @@ body{
         display: flex;
         flex-direction: column;
         background: #0000007a;
-        background: linear-gradient(#ffffff00, #000000c9 97%);
+        background: linear-gradient(#ffffff00 54%, #ffffff40 86%, #000000 97%);
         position: absolute;
         height: 185px;
         width: 100%;
@@ -481,13 +507,13 @@ body{
         grid-template-columns: 1fr;
     }
 
-    .movies-list-container {
-        margin: 0px;
-        justify-content: center;
-    }
-
     .side-container {
         padding-left: 0px;
+    }
+
+    .header-ad {
+        margin: .5em;
+        width: 100%;
     }
 
   }
