@@ -144,7 +144,7 @@ body{
     margin: .5em;
 }
 
-.seacrhbar-input{
+.searchbar-input{
     outline: none;
     border: none;
     border-radius: 8px 0px 0px 8px;
@@ -175,12 +175,12 @@ body{
     left: -10px;
 }
 
-.seacrhbar-icon{
+.searchbar-icon{
     color: #4d4d4d;
     font-size: 2em;
 }
 
-.seacrhbar-icon:hover{
+.searchbar-icon:hover{
     color: #2f2f2f;
     transition: .5s;
     -webkit-transition: .5s;
@@ -239,6 +239,15 @@ body{
     -o-transition: .5s;
 }
 
+.bottom-pagination-container{
+    display: flex;
+    justify-content: center;
+}
+
+.space-block{
+    height: 2em;
+}
+
 /* Starting Main Container CSS Code Here */
 
     .results-main-container{
@@ -248,12 +257,12 @@ body{
 
     .movies-list-container{
         display: flex;
-        justify-content: space-between;
+        margin: 30px;
         flex-wrap: wrap;
     }
 
     .movies-list{
-
+        margin: 1em;
         position: relative;
         cursor: pointer;
     }
@@ -271,6 +280,7 @@ body{
 
     .movie-list-image-content{
         display: flex;
+        flex-direction: column;
         background: #0000007a;
         background: linear-gradient(#ffffff00, #000000c9 97%);
         position: absolute;
@@ -279,28 +289,86 @@ body{
         border-radius: 8px;
         top: 0px;
         text-align: center;
-        justify-content: center;
-        align-items: flex-end;
 }
 
-.movie-list-image-content:hover{ 
-    background: linear-gradient(#ffffff00, #056491c9 97%);
+    .movie-list-image-content:hover{ 
+        background: linear-gradient(#ffffff00, #056491c9 97%);
+        transition: .5s;
+        -webkit-transition: .5s;
+        -moz-transition: .5s;
+        -ms-transition: .5s;
+        -o-transition: .5s;
+    }
+
+    .movie-list-title-container{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    .movie-list-title{
+                font-size: .7em;
+                color: white;
+                font-weight: lighter;
+                text-transform: uppercase;
+                padding: 5px;
+    }
+
+    .hd-movie-icon{
+        background:yellow;
+        position: absolute;
+        margin: 6px;
+        font-size: .8em;
+        width: 2em;
+        font-weight: bold;
+        border-radius: 2px;
+    }
+
+/* Ending Main Container CSS Code Here */
+
+/* Starting Side Nav Container CSS Code Here */
+
+.side-container{
+    padding-left: 100px;
+}
+
+.side-nav-heading{
+    color: white;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.category-list{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.category-list-item{
+    padding: 1em 0em;
+    border-bottom: solid #ffffff26 1px;
+}
+
+.category-list-item-text{
+    font-size: 1em;
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.category-list-item-text:hover{
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
     -ms-transition: .5s;
     -o-transition: .5s;
+    color: #d4d4d4;
 }
 
-    .movie-list-title{
-        font-size: .7em;
-        color: white;
-        font-weight: lighter;
-        text-transform: uppercase;
-        padding: 5px;
-    }
 
-/* Ending Main Container CSS Code Here */
+
+/* Ending Side Nav Container CSS Code Here */
 
 
 /* Starting Footer CSS */
@@ -309,6 +377,7 @@ body{
     display: flex;
     align-items: center;
     padding: 1em;
+    border-top: #e2fbff21 1px solid;
 }
 
 .footer-links{
@@ -362,27 +431,27 @@ body{
         display: block;
     }
 
-    .seacrhbar-input{
+    .searchbar-input{
         width: 30em;
     }
 
   }
 
   @media only screen and (max-width: 580px){
-    .seacrhbar-input{
+    .searchbar-input{
         width: 25em;
     }
   }
 
   
   @media only screen and (max-width: 480px){
-    .seacrhbar-input{
+    .searchbar-input{
         width: 20em;
     }
   }
 
   @media only screen and (max-width: 400px){
-    .seacrhbar-input{
+    .searchbar-input{
         width: 16em;
     }
   }

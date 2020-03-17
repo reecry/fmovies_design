@@ -158,13 +158,13 @@ body{
     color: white;
 }
 
-.serachbar-container{
+.searchbar-container{
     display: flex;
     justify-content: center;
     margin: .5em;
 }
 
-.seacrhbar-input{
+.searchbar-input{
     outline: none;
     border: none;
     border-radius: 8px 0px 0px 8px;
@@ -195,12 +195,12 @@ body{
     left: -10px;
 }
 
-.seacrhbar-icon{
+.searchbar-icon{
     color: #4d4d4d;
     font-size: 2em;
 }
 
-.seacrhbar-icon:hover{
+.searchbar-icon:hover{
     color: #2f2f2f;
     transition: .5s;
     -webkit-transition: .5s;
@@ -376,27 +376,27 @@ body{
         display: block;
     }
 
-    .seacrhbar-input{
+    .searchbar-input{
         width: 30em;
     }
 
   }
 
   @media only screen and (max-width: 580px){
-    .seacrhbar-input{
+    .searchbar-input{
         width: 25em;
     }
   }
 
   
   @media only screen and (max-width: 480px){
-    .seacrhbar-input{
+    .searchbar-input{
         width: 20em;
     }
   }
 
   @media only screen and (max-width: 400px){
-    .seacrhbar-input{
+    .searchbar-input{
         width: 16em;
     }
   }
