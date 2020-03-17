@@ -36,6 +36,11 @@
         <!-- Mobile Menu -->
 
         <div class="sidenav" id="myNav">
+            <!-- sidenav bar close icon -->
+            <div class="close-sidenav">
+                <i onclick="closeNav()" class="fas fa-times close-sidenav-icon"></i>
+            </div>
+
             <ul>
                <a href="" class="sidenav-links"> <li>Home</li></a>
                <a href="" class="sidenav-links"> <li>genre</li></a>
@@ -45,10 +50,6 @@
                <a href="" class="sidenav-links"> <li>login</li></a>
                <a href="" class="sidenav-links"> <li>sign up</li></a>
             </ul>
-
-            <div class="close-sidenav">
-                <i onclick="closeNav()" class="fas fa-times close-sidenav-icon"></i>
-            </div>
         </div>
 
     </nav>
@@ -72,8 +73,10 @@
         </div>
 
         <div class="serachbar-container">
-            <input type="seacrh" class="seacrhbar-input" placeholder="Seacrh for Movies, TV Shows, Actors......" name="">
-           <button class="search-button"><i class="fas fa-search seacrhbar-icon"></i></button>
+            <form action="" method="">
+                <input type="seacrh" class="seacrhbar-input" placeholder="Seacrh for Movies, TV Shows, Actors......" name="">
+                <button class="search-button"><i class="fas fa-search seacrhbar-icon"></i></button>
+            </form>   
         </div>
 
         <!-- Space Block -->

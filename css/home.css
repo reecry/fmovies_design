@@ -51,7 +51,10 @@ body{
 }
 
 .close-sidenav{
-    text-align: center;
+    text-align: right;
+    position: relative;
+    top: -40px;
+    left: -30px;
 }
 
 .close-sidenav-icon{
@@ -185,11 +188,23 @@ body{
     -ms-border-radius:0px 8px 8px 0px;
     -o-border-radius:0px 8px 8px 0px;
     cursor: pointer;
+    padding: 1.1em;
+    top: 4px;
+    left: -10px;
 }
 
 .seacrhbar-icon{
     color: #4d4d4d;
     font-size: 2em;
+}
+
+.seacrhbar-icon:hover{
+    color: #2f2f2f;
+    transition: .5s;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 .dynamic-menu-container{
@@ -204,7 +219,7 @@ body{
 }
 
 .dynamic-menu > div{
-    margin: 10px;
+    margin: 16px 8px;
 }
 
 .dynamic-menu-link{
@@ -219,7 +234,7 @@ body{
     -o-border-radius: 20px;
     text-transform: capitalize;
     font-size: 1em;
-    margin: 0em 1em;
+    margin: 0px;
 }
 
 .dynamic-menu-link:hover{
@@ -358,4 +373,27 @@ body{
         display: block;
     }
 
+    .seacrhbar-input{
+        width: 30em;
+    }
+
+  }
+
+  @media only screen and (max-width: 580px){
+    .seacrhbar-input{
+        width: 25em;
+    }
+  }
+
+  
+  @media only screen and (max-width: 480px){
+    .seacrhbar-input{
+        width: 20em;
+    }
+  }
+
+  @media only screen and (max-width: 400px){
+    .seacrhbar-input{
+        width: 100%;
+    }
   }
