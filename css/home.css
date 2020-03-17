@@ -13,55 +13,7 @@ body{
     background-color: #080243;
 }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #080243;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    box-shadow: #030117 0px 1px 9px;
-    display: none;
-  }
 
-  .sidenav > ul > .sidenav-links{
-      display: block;
-      width: 100%;
-      text-align: center;
-      list-style: none;
-      text-decoration: none;
-      padding: 1em;
-      font-size: 1em;
-      color: white;
-      cursor: pointer;
-      text-transform: uppercase;
-  }
-
-  .sidenav-links:hover{
-    background-color: #05003b;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-}
-
-.close-sidenav{
-    text-align: right;
-    position: relative;
-    top: -40px;
-    left: -30px;
-}
-
-.close-sidenav-icon{
-    font-size: 1.4em;
-    color: white;
-    cursor: pointer;
-}
   
 
 /* Starting Navbar CSS Code */
@@ -126,6 +78,56 @@ body{
 .hamburger-icon{
     font-size: 1.5em;
     margin-right: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #080243;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: #030117 0px 1px 9px;
+    display: none;
+  }
+
+  .sidenav > ul > .sidenav-links{
+      display: block;
+      width: 100%;
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+      padding: 1em;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+
+  .sidenav-links:hover{
+    background-color: #05003b;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.close-sidenav{
+    text-align: right;
+    position: relative;
+    top: -40px;
+    left: -30px;
+}
+
+.close-sidenav-icon{
+    font-size: 1.4em;
     color: white;
     cursor: pointer;
 }
@@ -201,10 +203,10 @@ body{
 .seacrhbar-icon:hover{
     color: #2f2f2f;
     transition: .5s;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
 }
 
 .dynamic-menu-container{
@@ -394,6 +396,6 @@ body{
 
   @media only screen and (max-width: 400px){
     .seacrhbar-input{
-        width: 100%;
+        width: 16em;
     }
   }
