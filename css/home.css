@@ -158,6 +158,9 @@ body{
     color: white;
 }
 
+
+/* Search Bar CSS */
+
 .search-form-container{
     width: 700px;
     margin: auto;
@@ -225,6 +228,8 @@ body{
     -ms-transition: .5s;
     -o-transition: .5s;
 }
+
+/* Dynamic Menus CSS*/
 
 
 .dynamic-menu-container{
@@ -368,6 +373,7 @@ body{
 /* --------------------------------------*/
 
 @media only screen and (max-width: 1000px) {
+    
     .navbar-center-links, .navbar-right-links{
       display: none;
     }

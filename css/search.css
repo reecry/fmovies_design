@@ -230,6 +230,8 @@ body{
 /* Ending Search Bar Code */
 
 
+/* CSS for Above Pagination Position */
+
 .results-container-header{
     display: flex;
     align-items: flex-end;
@@ -245,6 +247,8 @@ body{
 .result-heading-container{
     flex-grow: 5;
 }
+
+/* Pagination CSS */
 
 .results-pagination-container{
     background-color: #E2FBFF;
@@ -306,6 +310,7 @@ body{
         cursor: pointer;
     }
 
+    /* Image Size Control */
 
     .movie-list-image{
         width: 6.5em;
@@ -316,6 +321,9 @@ body{
         -ms-border-radius: 8px;
         -o-border-radius: 8px;
 }
+
+
+/* CSS for Content Over the Image */
 
     .movie-list-image-content{
         display: flex;
@@ -366,7 +374,7 @@ body{
 
 /* Ending Main Container CSS Code Here */
 
-/* Starting Side Nav Container CSS Code Here */
+/* Starting Side Container CSS Code Here */
 
 .side-container{
     padding-left: 100px;
@@ -407,7 +415,7 @@ body{
 
 
 
-/* Ending Side Nav Container CSS Code Here */
+/* Ending Side Container CSS Code Here */
 
 
 /* Starting Footer CSS */
