@@ -559,7 +559,7 @@ body{
         margin: auto;
     }
     
-    .movie-detail-option-list{
+    .movie-detail-option-list{  
         flex-direction: column;
     }
 
