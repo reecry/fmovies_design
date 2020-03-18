@@ -323,21 +323,21 @@ body{
     text-transform: uppercase;
 }
 
-.fa-facebook-f{
+.fa-facebook-f-m{
     color: #004CFF;
 }
 
-.fa-youtube{
+.fa-youtube-m{
     color: #FF0000;
 }
 
-.fa-instagram{
+.fa-instagram-m{
     background: -webkit-linear-gradient(#FF01A2, #FFBB00);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.fa-twitter{
+.fa-twitter-m{
     color: #0099FF;
 }
 
