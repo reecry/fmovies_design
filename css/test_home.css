@@ -1,0 +1,482 @@
+/* Giving Margin and Padding 0px to All the Elements and Giving Box Sizing: Border Box */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #080243;
+    overflow-x: hidden;
+}
+
+
+  
+
+/* Starting Navbar CSS Code */
+
+/* It uses Flex Box and .navbar-links is used to provide css to all the links */
+
+.navbar-container{
+    background-color: #080243;
+    box-shadow: #04002285 0px 3px 6px;
+}
+
+.navbar-data-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 4em;
+}
+
+.navbar-logo{
+    width: 7em;
+    height: auto;
+}
+
+.navbar-logo-container{
+    flex-grow: 2;
+    text-align: center;
+}
+
+.navbar-center-links{
+    flex-grow: 4;
+    text-align: left;
+}
+
+.navbar-right-links{
+    flex-grow: 4;
+    text-align: right;
+}
+
+.navbar-links{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1.2em;
+    text-decoration: none;
+}
+
+.navbar-links:hover{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition-timing-function: ease-in-out;
+    color: #979797;
+}
+
+.hamburger-section{
+    display: none;
+}
+
+.hamburger-icon{
+    font-size: 1.5em;
+    margin-right: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #080243;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: #030117 0px 1px 9px;
+    display: none;
+  }
+
+  .sidenav > ul > .sidenav-links{
+      display: block;
+      width: 100%;
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+      padding: 1em;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+
+  .sidenav-links:hover{
+    background-color: #05003b;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.close-sidenav{
+    text-align: right;
+    position: relative;
+    top: -40px;
+    left: -30px;
+}
+
+.close-sidenav-icon{
+    font-size: 1.4em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ending Navbar CSS Code Here */
+
+/* Starting Main Container CSS Code Here */
+
+.home-page-main-container{
+    margin-top: 5em;
+}
+
+.space-block{
+    height: 1.5em;
+}
+
+.home-page-data-container{
+    text-align: center;
+    margin: .5em;
+}
+
+.main-logo{
+    width: 10em;
+}
+
+.heading-text{
+    font-size: 2em;
+    color: white;
+}
+
+
+/* Search Bar CSS */
+
+.search-form-container{
+    width: 700px;
+    margin: auto;
+}
+
+.searchbar-container{
+    display: flex;
+    margin: .5em;
+}
+
+.search-input-box{
+    width: 100%;
+}
+
+.searchbar-input{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    -webkit-border-radius: 8px 0px 0px 8px;
+    -moz-border-radius: 8px 0px 0px 8px;
+    -ms-border-radius: 8px 0px 0px 8px;
+    -o-border-radius: 8px 0px 0px 8px;
+    width: 100%;
+    font-size: 1em;
+    padding: 1.2em;
+    color: #555555;
+}
+
+.search-button-box{
+    background:white;
+    border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+    -moz-border-radius: 0px 8px 8px 0px;
+    -ms-border-radius: 0px 8px 8px 0px;
+    -o-border-radius: 0px 8px 8px 0px;
+    display: flex;
+    align-items: center;
+    width: 3em;
+    justify-content: center;
+}
+
+.search-button{
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding-right: 10px;
+    background-color: white;
+    border-radius:0px 8px 8px 0px;
+    -webkit-border-radius:0px 8px 8px 0px;
+    -moz-border-radius:0px 8px 8px 0px;
+    -ms-border-radius:0px 8px 8px 0px;
+    -o-border-radius:0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+.searchbar-icon{
+    color: #4d4d4d;
+    font-size: 2em;
+}
+
+.searchbar-icon:hover{
+    color: #2f2f2f;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* Dynamic Menus CSS*/
+
+
+.dynamic-menu-container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+}
+
+.dynamic-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.dynamic-menu > div{
+    margin: 16px 8px;
+}
+
+.dynamic-menu-link{
+    background-color: #E2FBFF;
+    color: #525252;
+    padding: .4em 1.5em;
+    text-decoration: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 1em;
+    margin: 0px;
+}
+
+.dynamic-menu-link:hover{
+    background-color: #c3eff6;
+    color: black;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* Ending Main Container CSS Code Here */
+
+
+/* Starting Trending Section Container CSS */
+
+.trending-section-header-container{
+    display: flex;
+    align-items: center;
+    margin: 1.5em;
+}
+
+.trending-section-text-container{
+    flex-grow: 5;
+}
+
+.trending-section-heading, .share-icon{
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+    text-transform: capitalize;
+}
+
+.trending-movie-section-container{
+    width: 100%;
+}
+
+
+.container {
+    margin: 0;
+  }
+  
+  
+  /* Example wrapper */
+  
+  .wrap {
+    position: relative;
+    margin: 0;
+  }
+  
+  
+  /* Frame */
+  
+  .frame {
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .frame ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 50px;
+  }
+  
+  .frame ul li {
+    float: left;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #3330;
+    color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Scrollbar */
+  
+  .scrollbar {
+    margin: 0 0 1em 0;
+    height: 2px;
+    background: #ccc;
+    line-height: 0;
+  }
+  
+  .scrollbar .handle {
+    width: 100px;
+    height: 100%;
+    background: #292a33;
+    cursor: pointer;
+  }
+  
+  .scrollbar .handle .mousearea {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+  }
+  
+  .trending-movie-icon{
+      width: 2.4em;
+      height: auto;
+  }
+
+
+
+/* srcoll bar */
+.trending-movie-section-container::-webkit-scrollbar {
+    height: .1em;
+}
+
+/* Track */
+.trending-movie-section-container::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+  }
+   
+  /* Handle */
+.trending-movie-section-container::-webkit-scrollbar-thumb {
+    background: #e2fbff; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+.trending-movie-section-container::-webkit-scrollbar-thumb:hover {
+    background: #c3eff6; 
+  }
+
+/* Ending Trending Movie Section CSS */
+
+
+
+/* Starting Footer CSS */
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+}
+
+.footer-links{
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: .5em 2em;
+}
+
+.left-footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-grow: 5;
+}
+
+.right-footer{
+    text-align: center;
+    flex-grow: 5;
+}
+
+.footer-icon{
+    color: white;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+/* Ending Footer CSS */
+
+
+
+/* -------------------------------------- */
+/* Applying Media Queries From Here Now */
+/* --------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    
+    .navbar-center-links, .navbar-right-links{
+      display: none;
+    }
+
+    .navbar-logo-container{
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    .hamburger-section{
+        display: block;
+    }
+
+    .dynamic-menu-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .dynamic-menu-empty-space{
+        display: none;
+    }
+
+    .sidenav{
+        display: block;
+    }
+
+  }
+
+
+  @media only screen and (max-width: 710px) {
+   
+    .search-form-container{
+        width: 100%;
+        margin: auto;
+    }
+
+  }
