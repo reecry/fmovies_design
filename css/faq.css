@@ -1,0 +1,263 @@
+/* Giving Margin and Padding 0px to All the Elements and Giving Box Sizing: Border Box */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #080243;
+}
+
+
+  
+
+/* Starting Navbar CSS Code */
+
+/* It uses Flex Box and .navbar-links is used to provide css to all the links */
+
+.navbar-container{
+    background-color: #080243;
+    box-shadow: #04002285 0px 3px 6px;
+}
+
+.navbar-data-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 4em;
+}
+
+.navbar-logo{
+    width: 7em;
+    height: auto;
+}
+
+.navbar-logo-container{
+    flex-grow: 2;
+    text-align: center;
+}
+
+.navbar-center-links{
+    flex-grow: 4;
+    text-align: left;
+}
+
+.navbar-right-links{
+    flex-grow: 4;
+    text-align: right;
+}
+
+.navbar-links{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 1.2em;
+    text-decoration: none;
+}
+
+.navbar-links:hover{
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    transition-timing-function: ease-in-out;
+    color: #979797;
+}
+
+.hamburger-section{
+    display: none;
+}
+
+.hamburger-icon{
+    font-size: 1.5em;
+    margin-right: 1em;
+    color: white;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #080243;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: #030117 0px 1px 9px;
+    display: none;
+  }
+
+  .sidenav > ul > .sidenav-links{
+      display: block;
+      width: 100%;
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+      padding: 1em;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      text-transform: uppercase;
+  }
+
+  .sidenav-links:hover{
+    background-color: #05003b;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+.close-sidenav{
+    text-align: right;
+    position: relative;
+    top: -40px;
+    left: -30px;
+}
+
+.close-sidenav-icon{
+    font-size: 1.4em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Ending Navbar CSS Code Here */
+
+/* Main Container Block CSS */
+
+.main-container-block{
+    padding: 2em;
+}
+
+
+/* FAQ Large Text CSS */
+
+.faq-large-text-container .faq-large-text{
+    text-transform: uppercase;
+    font-size: 5em;
+    color: #E2FBFF;
+}
+
+
+/* Starting Search Bar Code */
+
+.search-form-container{
+    width: 700px;
+}
+
+.searchbar-container{
+    display: flex;
+    margin: .5em;
+}
+
+.search-input-box{
+    width: 100%;
+}
+
+.searchbar-input{
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    border-radius: 8px 0px 0px 8px;
+    -webkit-border-radius: 8px 0px 0px 8px;
+    -moz-border-radius: 8px 0px 0px 8px;
+    -ms-border-radius: 8px 0px 0px 8px;
+    -o-border-radius: 8px 0px 0px 8px;
+    width: 100%;
+    font-size: 1em;
+    padding: 1.2em;
+    color: #555555;
+}
+
+.search-button-box{
+    background:white;
+    border-radius: 0px 8px 8px 0px;
+    -webkit-border-radius: 0px 8px 8px 0px;
+    -moz-border-radius: 0px 8px 8px 0px;
+    -ms-border-radius: 0px 8px 8px 0px;
+    -o-border-radius: 0px 8px 8px 0px;
+    display: flex;
+    align-items: center;
+    width: 3em;
+    justify-content: center;
+}
+
+.search-button{
+    -webkit-appearance: none;
+    border: none;
+    outline: none;
+    padding-right: 10px;
+    background-color: white;
+    border-radius:0px 8px 8px 0px;
+    -webkit-border-radius:0px 8px 8px 0px;
+    -moz-border-radius:0px 8px 8px 0px;
+    -ms-border-radius:0px 8px 8px 0px;
+    -o-border-radius:0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+.searchbar-icon{
+    color: #4d4d4d;
+    font-size: 2em;
+}
+
+.searchbar-icon:hover{
+    color: #2f2f2f;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* Ending Search Bar Code */
+
+
+
+
+/* -------------------------------------- */
+/* Applying Media Queries From Here Now */
+/* --------------------------------------*/
+
+@media only screen and (max-width: 1000px) {
+    .navbar-center-links, .navbar-right-links{
+      display: none;
+    }
+
+    .navbar-logo-container{
+        text-align: left;
+        margin-left: 1em;
+    }
+
+    .hamburger-section{
+        display: block;
+    }
+
+    .sidenav{
+        display: block;
+    }
+
+  }
+
+
+
+  @media only screen and (max-width: 710px) {
+   
+    .search-form-container{
+        width: 100%;
+        margin: auto;
+    }
+
+
+  }

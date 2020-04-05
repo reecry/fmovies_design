@@ -343,6 +343,35 @@ body{
     color: #0099FF;
 }
 
+/* Tags Section CSS */
+
+.movie-tag-section-container{
+    display: flex;
+    align-items: center;
+}
+
+.movie-tag-section .movie-tag-text{
+    font-size: .9em;
+    color: #A5A5A5;
+    text-transform: uppercase;
+}
+
+.movie-tag-list .movie-tag-list-text{
+    font-size: 0.9em;
+    color: #E2FBFF;
+    cursor: pointer;
+}
+
+.movie-tag-list .movie-tag-list-text:hover{
+    color: teal;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+
 /* Ending Movie Detail Section Code */
 
 
