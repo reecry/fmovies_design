@@ -134,34 +134,33 @@ body{
 
 /* Ending Navbar CSS Code Here */
 
-/* Advertising CSS Code */
+/* Main Container Block CSS */
 
-.advertising-box{
-    width: 100%;
-    display: flex;
-    justify-content: center;
+.main-container-block{
+    padding: 2em;
 }
 
-.header-ad {
-    background-color: #26215A;
-    height: auto;
-    width: 800px;
-}
 
-.side-ad{
-    background-color: #26215A;
-    width: 100%;
-    height: auto;
-}
+/* FAQ Large Text CSS */
 
-/* Advertising CSS Code */
+.faq-large-text-container .faq-large-text{
+    text-transform: uppercase;
+    font-size: 5em;
+    color: #E2FBFF;
+}
 
 
 /* Starting Search Bar Code */
 
+.searchbar-main-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
 .search-form-container{
     width: 700px;
-    margin: auto;
 }
 
 .searchbar-container{
@@ -229,194 +228,14 @@ body{
     -o-transition: .5s;
 }
 
-/* Ending Search Bar Code */
-
-/* Main Container */
-
-.results-main-container{
-    display: grid;
-    grid-template-columns: 5% 60% 30% 5%;
-}
-
-.results-container-header{
-    display: flex;
-    align-items: flex-end;
-    margin: 1em
-}
-
-
-/* Starting Video Player Code */
-
-.video-player{
-    width: 100%;
-    height: 100%;
-}
-
-
-/* Ending Video Player Code */
-
-/* Starting Movie Detail Section Code */
-
-.movie-detail-section-container{
-    background-color: #040024;
-}
-
-.movie-detail-container{
-    padding: 1em;
-}
-
-.movie-detail-section{
-    display: flex;
-}
-
-.movie-title{
-    flex-grow: 1;
-}
-
-.movie-title-heading{
+.ask-question-btn{
+    background-color: #e2fbff;
     font-size: 1em;
-    color: white;
-    font-weight: lighter;
-    text-transform: uppercase;
-}
-
-.movie-duration-time-icon{
-    font-size: .7em;
-    color: white;
-}
-
-.movie-duration-time{
-    font-size: .7em;
-    color: white;
-}
-
-.movie-social-media-link{
-    font-size: 1em;
-    width: 2em;
-}
-
-.movie-description{
-    color: #A5A5A5;
-    font-size: .8em;
-    font-weight: lighter;
-}
-
-.more-about-movie{
-    color: #00E6FF;
-}
-
-.movie-detail-option-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.movie-option-list-name{
-    color: #A5A5A5;
-    font-size: .9em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.movie-option-list-value{
-    color: #E2FBFF;
-    font-size: .9em;
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.fa-facebook-f-m{
-    color: #004CFF;
-}
-
-.fa-youtube-m{
-    color: #FF0000;
-}
-
-.fa-instagram-m{
-    background: -webkit-linear-gradient(#FF01A2, #FFBB00);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.fa-twitter-m{
-    color: #0099FF;
-}
-
-/* Tags Section CSS */
-
-.movie-tag-section-container{
-    display: flex;
-    align-items: center;
-}
-
-.movie-tag-section .movie-tag-text{
-    font-size: .9em;
-    color: #A5A5A5;
-    text-transform: uppercase;
-}
-
-.movie-tag-list .movie-tag-list-text{
-    font-size: 0.9em;
-    color: #E2FBFF;
+    padding: 1.2em;
+    color: #555555;
+    border: none;
     cursor: pointer;
-}
-
-.movie-tag-list .movie-tag-list-text:hover{
-    color: teal;
-    transition: .5s;
-    -webkit-transition: .5s;
-    -moz-transition: .5s;
-    -ms-transition: .5s;
-    -o-transition: .5s;
-}
-
-
-/* Ending Movie Detail Section Code */
-
-
-/* Space Block */
-
-.space-block{
-    height: 2em;
-}
-
-
-/* Starting Side  Container CSS Code Here */
-
-.side-container{
-    padding-left: 100px;
-}
-
-.recommendation-text-container{
-    padding: 1em;
-}
-
-.recommendation-text{
-    font-size: 1.2em;
-    color: white;
-    font-weight: lighter;
-    text-transform: uppercase;
-}
-
-/* Movies Recommendation */
-
-.movies-list-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.movies-list{
-    margin: 1em;
-    position: relative;
-    cursor: pointer;
-}
-
-
-.movie-list-image{
-    width: 6.5em;
-    height: auto;
+    font-weight: bold;
     border-radius: 8px;
     -webkit-border-radius: 8px;
     -moz-border-radius: 8px;
@@ -424,21 +243,8 @@ body{
     -o-border-radius: 8px;
 }
 
-.movie-list-image-content{
-    display: flex;
-    flex-direction: column;
-    background: #0000007a;
-    background: linear-gradient(#ffffff00 54%, #ffffff40 86%, #000000 97%);
-    position: absolute;
-    height: 185px;
-    width: 100%;
-    border-radius: 8px;
-    top: 0px;
-    text-align: center;
-}
-
-.movie-list-image-content:hover{ 
-    background: linear-gradient(#ffffff00, #056491c9 97%);
+.ask-question-btn:hover{
+    background-color: #98d6e1;
     transition: .5s;
     -webkit-transition: .5s;
     -moz-transition: .5s;
@@ -446,34 +252,70 @@ body{
     -o-transition: .5s;
 }
 
-.movie-list-title-container{
-    height: 100%;
+/* Ending Search Bar Code */
+
+/* Space Block */
+
+.space-block{
+    height: 2em;
+}
+
+/* Starting frequently asked question container CSS */
+
+.frequently-asked-question-container{
+    background-color: #040024;
+}
+
+.frequently-asked-question-text{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 1em;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.frequently-asked-question-section{
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.movie-list-title{
-            font-size: .7em;
-            color: white;
-            font-weight: lighter;
-            text-transform: uppercase;
-            padding: 5px;
+.question-block{
+    padding: 2em;
 }
 
-.hd-movie-icon{
-    background:yellow;
-    position: absolute;
-    margin: 6px;
-    font-size: .8em;
-    width: 2em;
-    font-weight: bold;
-    border-radius: 2px;
+.question-block-heading{
+    font-size: 1.3em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
+.ul-faq-question{
+    list-style: none;
+}
 
-/* Ending Side Container CSS Code Here */
+.li-faq-question{
+    margin-bottom: 1em;
+}
 
+.li-faq-question a{
+    color: white;
+    font-weight: lighter;
+    font-size: .9em;
+}
+
+.li-faq-question a:hover{
+    color: #008eff;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* Ending frequently asked question container CSS */
 
 /* Starting Footer CSS */
 
@@ -512,7 +354,6 @@ body{
 /* Ending Footer CSS */
 
 
-
 /* -------------------------------------- */
 /* Applying Media Queries From Here Now */
 /* --------------------------------------*/
@@ -537,65 +378,23 @@ body{
 
   }
 
-  
-  @media only screen and (max-width: 1500px) {
 
-    .results-main-container {
-      grid-template-columns: 3% 3fr 1fr 3%;
-        }
-
-    .side-container {
-        padding-left: 30px;
-       }
-}
-
-
-
-  @media only screen and (max-width: 1280px) {
-      .empty-gird-space{
-          display: none;
-      }
-
-      .results-main-container {
-        grid-template-columns: 2fr 1fr;
-        margin: 1em;
-        }
-
-    .side-container {
-        padding-left: 30px;
-    }
-  }
-
-  @media only screen and (max-width: 1000px) {
-
-    .results-main-container {
-        grid-template-columns: 1fr;
-    }
-
-    .side-container {
-        padding-left: 0px;
-    }
-
-    .header-ad {
-        margin: .5em;
-        width: 100%;
-    }
-
-  }
 
   @media only screen and (max-width: 710px) {
-   
-    .search-form-container{
-        width: 100%;
-        margin: auto;
+
+    .searchbar-main-container{
+        display: block;
+    
     }
     
-    .movie-detail-option-list{  
-        flex-direction: column;
+    .search-form-container{
+        width: 100%;
+        margin: 0px;
     }
 
-    .movie-option-list{
-        margin-top: .5em;
+    .ask-question-btn{
+        margin: 7px;
     }
+
 
   }

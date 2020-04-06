@@ -11,6 +11,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     background-color: #080243;
+    overflow-x: hidden;
 }
 
 
@@ -297,16 +298,82 @@ body{
 }
 
 .trending-movie-section-container{
-    display: flex;
-    overflow-x: scroll;
-    overflow-y: hidden;
-    cursor: pointer;
+    width: 100%;
 }
 
-.trending-movie-icon{
-    width: 6em;
+
+.container {
+    margin: 0;
+  }
+  
+  
+  /* Example wrapper */
+  
+  .wrap {
+    position: relative;
+    margin: 0;
+  }
+  
+  
+  /* Frame */
+  
+  .frame {
     height: auto;
-}
+    overflow: hidden;
+  }
+  
+  .frame ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 50px;
+  }
+  
+  .frame ul li {
+    float: left;
+    width: auto;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #3330;
+    color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  
+  
+  /* Scrollbar */
+  
+  .scrollbar {
+    margin: 0 0 1em 0;
+    height: 2px;
+    background: #ccc;
+    line-height: 0;
+  }
+  
+  .scrollbar .handle {
+    width: 100px;
+    height: 100%;
+    background: #292a33;
+    cursor: pointer;
+  }
+  
+  .scrollbar .handle .mousearea {
+    position: absolute;
+    top: -9px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+  }
+  
+  .trending-movie-icon{
+      width: 2em;
+      height: auto;
+  }
+
+
 
 /* srcoll bar */
 .trending-movie-section-container::-webkit-scrollbar {
