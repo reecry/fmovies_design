@@ -235,7 +235,7 @@ body{
 
 .results-main-container{
     display: grid;
-    grid-template-columns: 1fr 4fr 2fr 1fr;
+    grid-template-columns: 5% 60% 30% 5%;
 }
 
 .results-container-header{

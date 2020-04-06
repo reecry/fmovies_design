@@ -152,6 +152,13 @@ body{
 
 /* Starting Search Bar Code */
 
+.searchbar-main-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
 .search-form-container{
     width: 700px;
 }
@@ -221,9 +228,130 @@ body{
     -o-transition: .5s;
 }
 
+.ask-question-btn{
+    background-color: #e2fbff;
+    font-size: 1em;
+    padding: 1.2em;
+    color: #555555;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.ask-question-btn:hover{
+    background-color: #98d6e1;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
 /* Ending Search Bar Code */
 
+/* Space Block */
 
+.space-block{
+    height: 2em;
+}
+
+/* Starting frequently asked question container CSS */
+
+.frequently-asked-question-container{
+    background-color: #040024;
+}
+
+.frequently-asked-question-text{
+    color: white;
+    font-size: 1em;
+    text-transform: uppercase;
+    padding: 1em;
+    font-size: 2em;
+    font-weight: lighter;
+}
+
+.frequently-asked-question-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.question-block{
+    padding: 2em;
+}
+
+.question-block-heading{
+    font-size: 1.3em;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.ul-faq-question{
+    list-style: none;
+}
+
+.li-faq-question{
+    margin-bottom: 1em;
+}
+
+.li-faq-question a{
+    color: white;
+    font-weight: lighter;
+    font-size: .9em;
+}
+
+.li-faq-question a:hover{
+    color: #008eff;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+}
+
+/* Ending frequently asked question container CSS */
+
+/* Starting Footer CSS */
+
+.footer-container{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-top: #e2fbff21 1px solid;
+}
+
+.footer-links{
+    color:white;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: .5em 2em;
+}
+
+.left-footer{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    flex-grow: 5;
+}
+
+.right-footer{
+    text-align: center;
+    flex-grow: 5;
+}
+
+.footer-icon{
+    color: white;
+    font-size: 1.2em;
+    margin: 10px;
+}
+
+/* Ending Footer CSS */
 
 
 /* -------------------------------------- */
@@ -253,10 +381,19 @@ body{
 
 
   @media only screen and (max-width: 710px) {
-   
+
+    .searchbar-main-container{
+        display: block;
+    
+    }
+    
     .search-form-container{
         width: 100%;
-        margin: auto;
+        margin: 0px;
+    }
+
+    .ask-question-btn{
+        margin: 7px;
     }
 
 
